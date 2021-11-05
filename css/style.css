@@ -1,0 +1,735 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Estilizando Scroll bar */
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(218, 218, 218) #0D0D0D;
+}
+/* Chrome, Edge e Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}*::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}*::-webkit-scrollbar-thumb {
+    background-color: rgb(218, 218, 218);
+    border-radius: 100px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(204, 204, 204);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wraper1 {
+    /* background-color: rgb(44, 0, 0); */
+    width: 90%;
+    height: 100%;   
+}
+
+nav {
+    background-color: #0D0D0D;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #E8E8E8;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 43px;
+    font-weight: 500;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: #AFAFAF;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    margin: 0 20px;
+}
+nav ul li a:last-child {
+    margin-right: 0;
+}nav ul li a:hover {
+    color: #C0015A;
+    font-weight: 500;
+}
+
+.texts {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 28vh;
+}
+
+.first-title {
+    color: #C2C2C2;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.main-title {
+    color: #F6F6F6;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 73px;
+    font-weight: 700;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.second-title {
+    color: #C2C2C2;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.scroll-down {
+    color: #C2C2C2;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 120px;
+    user-select: none;
+}
+.scroll-down-icon {
+    font-size: 15px;
+}
+
+.left-icons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    margin: 10px 0;
+}
+.fab {
+    color: #919191;
+    font-size: 30px;
+}
+i {
+    margin: 15px 0;
+    margin-left: 20px;
+}
+i:first-child {
+    margin-top: 0;
+}
+.fa-github:hover {
+    color: #e6e6e6;
+}
+.fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
+
+/* -------- ABOUT SECTION -------- */
+.about {
+    background-color: #F1F1F1;
+    width: 100%;
+    /* height: 80vh; */
+    padding-bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wraper2 {
+    width: 60%;
+    height: 100%; 
+    /* background-color: brown;  */
+}
+
+.section-text-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.section-subtitle {
+    color: #C0015A;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    color: #000000;
+    font-family: 'Slabo 27px', serif;
+    font-size: 70px;
+    letter-spacing: 1px;
+}
+
+.about-informations {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.ola, .skills {
+    color: #000000;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.about-hi-text {
+    /* background-color: brown; */
+    width: 85%;
+    color: #303030;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.skills-blocks-container {
+    /* background-color: blue; */
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-block {
+    color: #303030;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #99999938;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 5px 6px;
+}.skill-block:first-child, .skill-block:last-child {
+    margin-left: 0;
+}
+
+/* -------- PROJECTS SECTION -------- */
+.projects {
+    background-color: #ffffff;
+    width: 100%;
+    /* height: calc(100vh + 200px); */
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    /* background-color: brown; */
+    width: 100%;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    width: 360px;
+    height: 490px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+
+    padding: 15px 30px 30px 30px;
+    box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.199);
+    border-radius: 8px;
+}
+
+.mockup {
+    width: 300px;
+}
+
+.card-title {
+    color: #000000;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card-text {
+    color: #303030;
+    font-family: 'Slabo 27px', serif;
+    font-size: 15px;
+
+}
+
+.buttons-container {
+    display: flex;
+    gap: 35px;
+}
+
+.button {
+    color: rgb(22, 22, 22); 
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    border: 2px solid rgb(22, 22, 22); 
+    padding: 5px 10px;
+    transition: box-shadow .7s;
+}.button:hover {
+    color: #C0015A;
+    font-weight: 900;
+    border: 2px solid #C0015A;
+    transition: ease .2s 
+    /* REVER DEPOIS PRA VER SE VAI DEIXAR ASSIM MESMO */
+    /* TENTAR BOX-SHADOW NOS BOTOES */
+}
+
+
+/* -------- CONTACT SECTION -------- */
+.contact {
+    background-color: #0D0D0D;
+    width: 100%;
+    /* height: calc(100vh + 180px); */
+    padding-bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title-contact {
+    color: #F6F6F6;
+}
+
+.contact-container {
+    /* background-color: brown;  */
+    width: 100%;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* inicio form */
+form {
+    width: 450px;
+}
+
+label,input {
+    display: block;
+}
+
+.input {
+    margin: 20px 0;
+}.input:first-child {
+    margin-top: 0;
+}
+
+.input label {
+    color: #585858;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    color: #B7B7B7;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 0px;
+    border:none;
+    border-bottom: 1px solid #58585844;
+}textarea,input:focus {
+    outline: none;
+}textarea{
+    border: 1px solid #58585844;
+    width: 100%;
+    height: 100px;
+}
+/* arrumando placeholder */
+::-webkit-input-placeholder  { color:#b7b7b74b; }
+input:-moz-placeholder { color:#b7b7b74b; }
+textarea:-moz-placeholder { color:#b7b7b74b; }
+
+/* inicio informações de contato */
+.infos {
+    /* background-color: brown; */
+    width: 250px;
+}
+
+.contact-info-title {
+    color: #E2E2E2;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.contact-info-text {
+    color: #585858;
+    font-family: 'Slabo 27px', serif;
+    font-size: 17px;
+    margin-bottom: 60px;
+}
+
+.submit-button {
+    color: #585858;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 1px solid #585858;
+    background: none;
+    
+    padding: 5px 10px;
+}.submit-button:hover {
+    color: #E2E2E2;
+    border: 1px solid #E2E2E2;
+    cursor: pointer;
+}
+
+
+/* -------- FOOTER -------- */
+footer {
+    width: 100%;
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #0D0D0D;
+}
+
+.social-links {
+    width: 200px;
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.social-links a {
+    color: #585858;
+}.social-links a:hover {
+    color: #919191;
+}
+
+.copyright {
+    color:#585858;
+    font-family: 'Slabo 27px', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}.copyright a {
+    color: #C0015A;
+}.copyright a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 1252px) {
+    .wraper2 {
+        width: 75%;
+    }
+    .about-hi-text {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    header {
+        background-image: url(../images/bg-small.png);
+    }
+    .wraper2 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .card {
+        width: 330px;
+        height: 490px;
+    } 
+    .mockup {
+        width: 250px;
+    }
+    .card-text {
+        font-size: 17px;
+    
+    }
+    form {
+        width: 400px;
+    }   
+}
+
+@media screen and (max-width: 845px) {
+    .wraper2 {
+        width: 85%;
+    }
+    .about-hi-text {
+        width: 85%;
+    } 
+}
+
+@media screen and (max-width: 795px) {
+    .wraper2 {
+        width: 90%;
+    }
+    .about-hi-text {
+        width: 85%;
+    } 
+}
+
+@media screen and (max-width: 752px) {
+    .wraper2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-informations {
+        margin-top: 90px;
+    }
+    .about-hi-text {
+        width: 90%;
+    }
+
+    .card-container {
+        width: 65%;
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 40px;        
+    }
+    .card {
+        width: 100%;
+        height: 400px;
+    }
+    .mockup {
+        width: 200px;
+    }
+    form {
+        width: 320px;
+    } 
+}
+
+@media screen and (max-width: 666px) {
+    .first-title {
+        font-size: 18px;
+        margin-bottom: -5px;
+    } 
+    .main-title {
+        font-size: 50px;
+    } 
+    .second-title {
+        font-size: 15px;
+    }
+    /* titulos das sections */
+    .section-subtitle {
+        font-size: 15px;
+    }    
+    .section-title {
+        font-size: 45px;
+    }
+    /* Section Sobre */
+    .about-informations {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .ola, .skills {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about-hi-text {
+        width: 100%;
+    }
+    .skills-blocks-container {
+        width: 100%;
+    }
+    /* Section Contato */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        width: 90%;
+    }
+    .input label {
+        margin-bottom: 8px;
+    }
+    textarea{
+        height: 120px;
+    }
+    .infos {
+        width: 90%;
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .contact-info-title {
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+    }
+    
+    .contact-info-text {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .card-container {
+        width: 90%;
+        margin-top: 100px;
+        gap: 70px;        
+    }
+    .card {
+        height: 450px;
+    }
+    .logo {
+        font-size: 35px;
+    }
+    nav ul li a {
+        font-size: 14px;
+        margin: 0 18px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    header {
+        background: url(../images/bg-mobile.png);
+        background-position: center;
+    }
+    .texts {
+        margin-top: 28vh;
+    }
+    .scroll-down {
+        font-size: 14px;
+        margin-top: 180px;
+    }
+    .scroll-down-icon {
+        font-size: 13px;
+    }
+    .first-title {
+        font-size: 16px;
+        margin-bottom: 0px;
+    } 
+    .main-title {
+        font-size: 35px;
+    } 
+    .second-title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        background-position: center;
+    }
+    .card-container {
+        width: 100%;      
+    }
+    /* titulos das sections */
+    .section-subtitle {
+        font-size: 14px;
+    }    
+    .section-title {
+        font-size: 40px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+    nav ul li a {
+        font-size: 14px;
+        margin: 0 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about {
+        padding-bottom: 35%;
+    }
+    .button {
+        font-size: 13px;
+        padding: 4px 9px;
+    } 
+}
