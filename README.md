@@ -4,7 +4,7 @@
 
 ![Tela principal do projeto](./images/screenshot.png)
 
-<h4 align="center"><a href="https://pedromarques.vercel.app">Clique aqui para visitar o portfólio</a></h4>
+<h4 align="center"><a href="https://pedromarques.vercel.app" target="_blank">Clique aqui para visitar o portfólio</a></h4>
 
 ## Tecnologias utilizadas
 Para o desenvolvimento deste site, foram utilizadas as tecnologias:
