@@ -283,6 +283,8 @@ i:first-child {
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
     
 }
 
@@ -504,6 +506,12 @@ footer {
 
 
 /* RESPONSIVO */
+@media screen and (min-width: 1450px) {
+ .card-container {
+     justify-content:center ;
+ }
+}
+
 @media screen and (max-width: 1252px) {
     .wraper2 {
         width: 75%;
